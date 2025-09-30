@@ -4,7 +4,7 @@ pipeline {
         stage('Checkout') { [cite: 59]
             steps {
                 // Replace with your repository URL
-                git 'https://github.com/your-user/your-repo.git' [cite: 61]
+                git 'https://github.com/Vedantu2005/WT_exp_6' [cite: 61]
             }
         }
         stage('Build') { [cite: 64]
