@@ -1,28 +1,27 @@
 pipeline {
-    agent any [cite: 57]
+    agent any
     stages {
-        stage('Checkout') { [cite: 59]
+        stage('Checkout') {
             steps {
-                // Replace with your repository URL
-                git 'https://github.com/Vedantu2005/WT_exp_6' [cite: 61]
+                git 'https://github.com/Vedantu2005/WT_exp_6.git'
             }
         }
-        stage('Build') { [cite: 64]
+        stage('Build') {
             steps {
-                echo 'Building the app...' [cite: 66]
-                // Example for Node.js: sh 'npm install' [cite: 67]
+                echo 'Building the app...'
+                // You would add real build commands here, e.g., sh 'npm install'
             }
         }
-        stage('Test') { [cite: 70]
+        stage('Test') {
             steps {
-                echo 'Running tests...' [cite: 72]
-                // Example for Node.js: sh 'npm test' [cite: 73]
+                echo 'Running tests...'
+                // You would add real test commands here, e.g., sh 'npm test'
             }
         }
-        stage('Deploy') { [cite: 76]
+        stage('Deploy') {
             steps {
-                echo 'Deploying to server...' [cite: 80]
-                // Example: sh 'scp build/* user@server:/var/www/html' [cite: 81]
+                echo 'Deploying to server...'
+                // You would add real deployment commands here
             }
         }
     }
