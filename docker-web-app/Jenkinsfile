@@ -1,0 +1,29 @@
+pipeline {
+    agent any [cite: 57]
+    stages {
+        stage('Checkout') { [cite: 59]
+            steps {
+                // Replace with your repository URL
+                git 'https://github.com/your-user/your-repo.git' [cite: 61]
+            }
+        }
+        stage('Build') { [cite: 64]
+            steps {
+                echo 'Building the app...' [cite: 66]
+                // Example for Node.js: sh 'npm install' [cite: 67]
+            }
+        }
+        stage('Test') { [cite: 70]
+            steps {
+                echo 'Running tests...' [cite: 72]
+                // Example for Node.js: sh 'npm test' [cite: 73]
+            }
+        }
+        stage('Deploy') { [cite: 76]
+            steps {
+                echo 'Deploying to server...' [cite: 80]
+                // Example: sh 'scp build/* user@server:/var/www/html' [cite: 81]
+            }
+        }
+    }
+}
